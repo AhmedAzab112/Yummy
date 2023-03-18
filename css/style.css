@@ -1,0 +1,304 @@
+body {
+    background-color: #0D0D0D;
+}
+
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------------------Start header------------------------ */
+header {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: -255px;
+    width: 320px;
+    height: 100vh;
+    z-index: 9999;
+}
+
+
+header .links a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+
+
+header .side-nav {
+    background-color: white;
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* ----------------------------------End header-------------------------- */
+
+
+
+/* ----------------------------------Start home---------------------------------- */
+#home {
+    display: block;
+}
+
+#home .item {
+    position: relative;
+    height: 275px !important;
+    margin-top: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#home .item .outline {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: top 0.7s;
+}
+#home .item .outline {
+   font-size: large;
+   font-weight: bold;
+}
+
+
+#home .item:hover .outline {
+    top: 0;
+}
+
+#home .item .img {
+    padding-right: 20px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#home .item .img img {
+    height: 100% !important;
+    width: 100% !important;
+}
+/* ----------------------------------End home---------------------------------- */
+
+
+
+/* ----------------------------------Start search---------------------------------- */
+#search {
+    display: none;
+}
+#search input {
+    background-color: transparent;
+    border-radius: 8px;
+    color: white;
+}
+/* ----------------------------------End search---------------------------------- */
+
+/* ----------------------------------Start contactUs---------------------------------- */
+#contact-us {
+    display: none;
+    height: 100vh;
+}
+
+#contact-us input {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#contact-us button {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+/* ----------------------------------End contactUs---------------------------------- */
+
+
+/* ----------------------------------Start area---------------------------------- */
+#area {
+    display: none;
+    cursor: pointer;
+}
+/* ----------------------------------End area---------------------------------- */
+
+
+/* ----------------------------------Start Categories---------------------------------- */
+#categories {
+    display: none;
+}
+
+#categories .item {
+    position: relative;
+    height: 200px !important;
+    margin-top: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#categories .item .outline {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: top 0.7s;
+}
+
+#categories .item .outline span {
+    font-size: large;
+    font-weight: bold;
+}
+
+#categories .item:hover .outline {
+    top: 0;
+}
+
+#categories .item .img {
+    padding-right: 20px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#categories .item .img img {
+    height: 100% !important;
+    width: 100% !important;
+}
+/* ----------------------------------End Categories---------------------------------- */
+
+
+/* ----------------------------------Start Ingredients---------------------------------- */
+#ingredients {
+    display: none;
+}
+#ingredients .row .description {
+    cursor: pointer;
+}
+/* ----------------------------------End Ingredients---------------------------------- */
+
+
+/* ----------------------------------Start meal-description---------------------------------- */
+#meal-description {
+    display: none;
+}
+
+#meal-description .main {
+    width: 100%;
+    height: 400px;
+}
+#meal-description .main .left-desc {
+    width: 40%;
+}
+
+#meal-description .main .left-desc img {
+    width: 100%;
+}
+
+#meal-description .main .right-desc {
+    width: 60%;
+    margin-left: 25px;
+    color: white;
+
+}
+#meal-description .main .right-desc .details span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#meal-description .main .right-desc .rescipe {
+    background-color: #CFF4FC;
+    color: #0D0D0D;
+}
+#meal-description .main .right-desc .tag {
+    background-color: #F8D7DA;
+    color: #860707;
+}
+
+
+/* ------------------[loader]----------------------- */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9991;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: red;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
